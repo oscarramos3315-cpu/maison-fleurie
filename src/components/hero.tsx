@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { FadeIn } from "@/components/fade-in";
 import { SiteHeader } from "@/components/site-header";
+import { BASE_PATH } from "@/lib/site-config";
 
 export function Hero() {
   return (
@@ -55,7 +56,7 @@ export function Hero() {
 
         <FadeIn delay={0.2} className="relative min-h-[420px] lg:min-h-0">
           <Image
-            src="/images/hero-peony.jpg"
+            src={`${BASE_PATH}/images/hero-peony.jpg`}
             alt="A hand-tied bouquet of pink and white peonies and roses"
             fill
             priority

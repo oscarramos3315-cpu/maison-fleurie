@@ -39,6 +39,12 @@ yarn-error.log*
 # cloudflare
 .wrangler
 
+# netlify
+.netlify
+
+# tailwind debug logs
+tailwindcss-*.log
+
 # claude code
 .claude
 

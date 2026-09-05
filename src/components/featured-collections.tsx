@@ -1,27 +1,28 @@
 import Image from "next/image";
 import { FadeIn } from "@/components/fade-in";
 import { whatsappOrderLink } from "@/lib/whatsapp";
+import { BASE_PATH } from "@/lib/site-config";
 
 const collections = [
   {
     name: "The Ivory Peony",
     price: 145,
     tag: "Seasonal",
-    image: "/images/ivory-peony.jpg",
+    image: `${BASE_PATH}/images/ivory-peony.jpg`,
     alt: "Close-up of a single blush pink peony bloom",
   },
   {
     name: "The Wild Sage",
     price: 185,
     tag: "Best Seller",
-    image: "/images/wild-sage.jpg",
+    image: `${BASE_PATH}/images/wild-sage.jpg`,
     alt: "White ranunculus with eucalyptus greenery against a teal wall",
   },
   {
     name: "The Garden Rose",
     price: 225,
     tag: "Limited",
-    image: "/images/garden-rose.jpg",
+    image: `${BASE_PATH}/images/garden-rose.jpg`,
     alt: "A wrapped bouquet of pink garden roses with white and gold wildflowers",
   },
 ] as const;
