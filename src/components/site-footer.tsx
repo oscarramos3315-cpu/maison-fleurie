@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { whatsappGeneralLink } from "@/lib/whatsapp";
 
 export function SiteFooter() {
@@ -17,21 +18,21 @@ export function SiteFooter() {
         <div className="flex gap-16 text-xs uppercase tracking-[0.25em] text-cream/60">
           <div className="flex flex-col gap-3">
             <span className="text-cream/35">Shop</span>
-            <a href="#collections" className="transition-colors hover:text-cream">
+            <Link href="/#collections" className="transition-colors hover:text-cream">
               Collections
-            </a>
-            <a href="#" className="transition-colors hover:text-cream">
+            </Link>
+            <Link href="/gift-cards" className="transition-colors hover:text-cream">
               Gift Cards
-            </a>
+            </Link>
           </div>
           <div className="flex flex-col gap-3">
             <span className="text-cream/35">Studio</span>
-            <a href="#" className="transition-colors hover:text-cream">
+            <Link href="/our-story" className="transition-colors hover:text-cream">
               Our Story
-            </a>
-            <a href="#" className="transition-colors hover:text-cream">
+            </Link>
+            <Link href="/visit" className="transition-colors hover:text-cream">
               Visit
-            </a>
+            </Link>
           </div>
           <div className="flex flex-col gap-3">
             <span className="text-cream/35">Contact</span>

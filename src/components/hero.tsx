@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { FadeIn } from "@/components/fade-in";
 import { SiteHeader } from "@/components/site-header";
 import { BASE_PATH } from "@/lib/site-config";
@@ -38,8 +39,8 @@ export function Hero() {
               >
                 Explore the Collection
               </a>
-              <a
-                href="#"
+              <Link
+                href="/our-story"
                 className="group inline-flex items-center gap-2 text-xs uppercase tracking-[0.25em] text-cream/70 transition-colors duration-300 hover:text-cream"
               >
                 Our Story
@@ -49,7 +50,7 @@ export function Hero() {
                 >
                   &rarr;
                 </span>
-              </a>
+              </Link>
             </div>
           </FadeIn>
         </div>

@@ -10,3 +10,14 @@ export function whatsappGeneralLink() {
     "Hi Maison Fleurie! I have a question about your arrangements.";
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
 }
+
+export function whatsappGiftCardLink(amount: number) {
+  const message = `Hi Maison Fleurie! I'd like to purchase a $${amount} gift card. Could you let me know how to make payment and how the gift card is delivered?`;
+  return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+}
+
+export function whatsappVisitLink() {
+  const message =
+    "Hi Maison Fleurie! I'd like to arrange a time to visit the studio.";
+  return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+}
