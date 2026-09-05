@@ -10,11 +10,7 @@ export const metadata: Metadata = {
     "Studio hours and how to arrange a visit to Maison Fleurie, by appointment.",
 };
 
-const hours = [
-  { day: "Tuesday – Friday", time: "10:00am – 5:00pm" },
-  { day: "Saturday", time: "10:00am – 2:00pm" },
-  { day: "Sunday – Monday", time: "Closed" },
-];
+const hours = [{ day: "Tuesday – Saturday", time: "10:00am – 5:00pm" }];
 
 export default function VisitPage() {
   return (
@@ -32,36 +28,24 @@ export default function VisitPage() {
           <p className="mt-6 max-w-md text-base leading-relaxed text-ink/75">
             The studio is open by appointment, so we can give your order —
             and your questions — proper attention. Reach out on WhatsApp and
-            we&apos;ll find a time that works.
+            we&apos;ll find a time that works; we&apos;ll share the address
+            once your visit is scheduled.
           </p>
         </FadeIn>
 
         <FadeIn delay={0.12}>
-          <div className="mt-12 grid gap-10 sm:grid-cols-2">
-            <div>
-              <span className="text-xs uppercase tracking-[0.3em] text-sage-dark">
-                Studio Address
-              </span>
-              <p className="mt-3 text-base leading-relaxed text-ink">
-                123 Bloom Street, Suite 4
-                <br />
-                Your City, ST 00000
-              </p>
-            </div>
-
-            <div>
-              <span className="text-xs uppercase tracking-[0.3em] text-sage-dark">
-                Hours
-              </span>
-              <dl className="mt-3 flex flex-col gap-1.5 text-base text-ink">
-                {hours.map((h) => (
-                  <div key={h.day} className="flex justify-between gap-6">
-                    <dt className="text-ink/70">{h.day}</dt>
-                    <dd>{h.time}</dd>
-                  </div>
-                ))}
-              </dl>
-            </div>
+          <div className="mt-12">
+            <span className="text-xs uppercase tracking-[0.3em] text-sage-dark">
+              Hours
+            </span>
+            <dl className="mt-3 flex flex-col gap-1.5 text-base text-ink">
+              {hours.map((h) => (
+                <div key={h.day} className="flex justify-between gap-6">
+                  <dt className="text-ink/70">{h.day}</dt>
+                  <dd>{h.time}</dd>
+                </div>
+              ))}
+            </dl>
           </div>
         </FadeIn>
 
